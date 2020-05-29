@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap');
+/* Genearal css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inconsolate', sans-serif;
+    font-size: 400;
+    background: #fff;
+    color: #8b9dc3;
+}
+
+a {
+    text-decoration: none;
+    color: #3b5998;
+}
+
+
+
+/* nav-bar */
+/* .header-container {   
+    color: #3b5998;
+} */
+
+.nav-bar .nav {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.nav-bar .nav a {
+    padding: 1rem;
+}
+
+/* Showcase Area */
+
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+
+.showcase-content h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.showcase-content i {
+    margin-top: 0.5rem;
+}
+.showcase-content button {
+    margin-top: 2rem;
+}
+
+.showcase-img {
+    background: url('https://res.cloudinary.com/danny97/image/upload/v1590716717/image-5_clcxyc.jpg') no-repeat center center/cover;
+    height: 80vh;
+
+}
+/* social media section */
+.social-media {
+    margin-top: 1rem;
+  
+}
+
+.social-media .social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+
+
+.social a i {
+    padding: 0 0.5rem;
+    color: #3b5998;
+}
+
+.social a i:hover {
+    color: #8b9dc3;
+}
+
+/* utilities  */
+
+.btn {
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    border: 0.2px #3b5998 solid;
+    border-radius: 5px 5px 5px 0;
+    cursor: pointer;
+    background: #3b5998;
+    color: #f7f7f7;
+
+}
+
+.btn:hover {
+    background: #8b9dc3;
+}
+
+/* media query */
+
+@media(max-width: 500px) {
+    .nav li:nth-child(5) {
+        display: none;
+    }
+    .nav-bar .nav a {
+        padding: 0.5rem;
+    }
+    /* showcase */
+    .showcase {
+        grid-template-areas: 1fr;
+    }
+
+    .showcase-content h1 {
+        font-size: 2rem;
+    }
+
+}
+
+
+
