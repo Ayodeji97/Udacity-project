@@ -1,0 +1,21 @@
+/* media query for style.css */
+
+@media(max-width: 500px) {
+    .nav li:nth-child(5) {
+        display: none;
+    }
+    .nav-bar .nav a {
+        padding: 0.5rem;
+    }
+    /* showcase */
+    .showcase {
+        grid-template-areas: 1fr;
+    }
+
+    .showcase-content h1 {
+        font-size: 2rem;
+    }
+
+}
+
+

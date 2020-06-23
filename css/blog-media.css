@@ -1,0 +1,81 @@
+/* media query for blog */
+/* mobile */
+@media(max-width: 500px) {
+    .container {
+        grid-template-areas: 
+        'header'
+        'main-section'
+        'aside-bar'
+        'footer';
+    }
+    .navbar .nav a {
+        padding:0.5rem;
+        font-size: 0.75rem;
+    }
+    .navbar .nav li:nth-child(5) {
+        display: none;
+    }
+
+    .section-header h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        padding-bottom: 0.5rem;
+      
+    }
+    .section-header p {
+        font-size: 0.8rem;  
+    }
+
+    .img-section {
+        width: 12rem;
+        height: 12rem;
+    }
+    .about .about-img {
+        padding: 1rem;  
+    }
+
+    /* aside */ 
+    .main-section p,
+    .about p {
+        line-height: 1.4;
+        text-align: center;
+    }
+  
+    .gallery-image {
+       
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+        padding-top: 0.8rem;
+    }
+
+    .gallery .gallery-img {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .follow-us-icons {
+        grid-template-columns: 1fr;
+       
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    
+
+
+}
+
+/* Tablet */
+
+@media(max-width: 768px) {
+    .container {
+        grid-template-areas: 
+        'header'
+        'main-section'
+        'aside-bar'
+        'footer';
+    }
+
+}
